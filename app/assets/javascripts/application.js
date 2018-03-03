@@ -15,4 +15,3 @@
 //= require jquery
 //= require materialize-sass
 //= require_tree .
-

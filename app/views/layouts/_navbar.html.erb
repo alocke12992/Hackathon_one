@@ -1,6 +1,10 @@
+<script type="text/javascript">
+$(".dropdown-button").dropdown();
+</script>
+
 <ul id="dropdown1" class="dropdown-content">
-  <li><%= link_to 'New', new_movie_path, method: :create %>
-  <li><%= link_to 'Exit', destroy_user_session_path, method: :delete%></li>
+  <li><%=  button_to 'New', new_movie_path, method: :create %>
+  <li><%= button_to 'Exit', destroy_user_session_path, method: :delete%></li>
 </ul>
 <nav>
   <div class="nav-wrapper red accent-4">
