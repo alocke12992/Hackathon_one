@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180303170841) do
+=======
+ActiveRecord::Schema.define(version: 20180303164532) do
+>>>>>>> navbar
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "comments", force: :cascade do |t|
     t.bigint "user_id"
     t.integer "movie_id"
@@ -24,6 +29,8 @@ ActiveRecord::Schema.define(version: 20180303170841) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
+=======
+>>>>>>> navbar
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.string "duration"
