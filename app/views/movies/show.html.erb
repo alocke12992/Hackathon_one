@@ -7,7 +7,7 @@
 <h2>Comments</h2>
 <% @movie.comments.each do |comment| %>
   <%= render 'comments/comment', { comment: comment } %>
-  <%= link_to 'Edit Comment', edit_comment_path([@movie, comment]) %>
-  <%= link_to "Delete", comment, method: :delete, data: { confirm: "Are you sure?" } %>
+  <%= link_to 'Edit Comment', edit_movie_comment_path(@movie, comment) %>
+  <%= link_to 'Delete', [@movie, @comment], method: :delete%>
   <% end %>
 <hr />

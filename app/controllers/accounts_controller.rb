@@ -1,5 +1,5 @@
 class AccountsController < ApplicationController
-  
+
   before_action :set_account, only: [:show, :edit, :update]
 
   def index
@@ -7,6 +7,7 @@ class AccountsController < ApplicationController
   end
 
   def show
+    @comments = current_user.comments
   end
 
   def new
@@ -37,11 +38,11 @@ class AccountsController < ApplicationController
     @account.destroy
   end
 
-  private 
+  private
     def set_account
       #don't just users Account.find(params[:id]) or you would be able to view
       #others accounts
-      @account = current_user.accounts.find(params[:id])
+      @account = current_user.accounts
     end
 
     def account_params
