@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'static_pages#home'
+  root 'movies#index'
   resources :movies 
 
   scope'movies/:movie_id', as: 'movie' do 
