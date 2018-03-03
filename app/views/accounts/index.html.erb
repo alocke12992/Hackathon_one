@@ -1,11 +1,7 @@
 <div class=container>
-  <h2>Welcome
-    <%= current_user.first_name %>
+  <h2>Welcome: <%= current_user.first_name %>
   </h2>
   <hr />
-
-    <h3>Your Accounts</h3>
-
     <%= link_to "See Comments", account_path(@accounts) %>
     <%= link_to "Playlists", playlists_index_path %>
 </div>
