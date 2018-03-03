@@ -1,8 +1,11 @@
+<div class="container">
 <h1><%= @movie.title %></h1>
-<iframe src= "<%= @movie.trailer(params[:id]) %> "height=1024 width=768></iframe>
+
+<iframe src= "<%= @movie.trailer %> " height=768 width=1024></iframe>
 
 <h6>Genre: <%= @movie.genre %> Duration: <%= @movie.duration %></h6>
-<p><%= @movie.description %></p>
+<a href="<%= @movie.description %>"> IMDB</a>
+<br>
 <%= link_to 'Add Comment', new_movie_comment_path(@movie) %>
 <h2>Comments</h2>
 <% @movie.comments.each do |comment| %>
@@ -11,3 +14,5 @@
   <%= link_to 'Delete', [@movie, @comment], method: :delete%>
   <% end %>
 <hr />
+
+</div>
