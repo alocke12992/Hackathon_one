@@ -44,7 +44,7 @@ class MoviesController < ApplicationController
       @movie = Movie.find(params[:id])
     end
 
-    def movies_params
+    def movie_params
       params.require(:movie).permit(:title, :duration, :genre, :description, :trailer)
     end
 end
