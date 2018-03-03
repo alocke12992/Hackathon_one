@@ -8,3 +8,6 @@
 
  <%= link_to 'See Comments', account_path(@accounts) %>
 </div>
+<div class="right-align">
+<%= button_to 'LOG OUT', destroy_user_session_path, method: :delete%>
+</div>

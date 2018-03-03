@@ -1,11 +1,13 @@
-<h2 class=center>Click a Movie To View</h2>
+<h2 class=center>Movies</h2>
 
 <div class=container>
-  <div class="right white-text btn med red accent-4"> <%= link_to 'ADD A NEW MOVIE', new_movie_path %> 
-  </div>
   <% @movies.each do |movie| %>
   <div>
   <%= link_to movie.title, movie %> 
   </div>
   <% end %>
+</div>
+
+<div class="right-align">
+<%= button_to 'LOG OUT', destroy_user_session_path, method: :delete%>
 </div>

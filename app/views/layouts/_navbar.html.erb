@@ -2,8 +2,10 @@
   <div class="nav-wrapper red accent-4">
     <a href="/" class="brand-logo">uToob</a>
     <ul class="right hide-on-med-and-down">
-      <li><%= button_to 'Exit', destroy_user_session_path, method: :delete%></li>
-      <li><%= link_to 'Exit', destroy_user_session_path %></li>
+    <li><%= link_to 'Movies', root_path%></li>
+    <li><%= link_to 'Upload', new_movie_path %></li>
+    <li><%= link_to 'Account', accounts_path %></li>
+
     </ul>
   </div>
 </nav>
