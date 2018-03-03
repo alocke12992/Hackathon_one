@@ -1,2 +1,7 @@
-<h1>Movies#show</h1>
-<p>Find me in app/views/movies/show.html.erb</p>
+
+<h1><%= @movie.title %></h1>
+<iframe width="560" height="315" src=< %=\ " @movie.trailer \"%>
+  frameborder="0" allowfullscreen>
+</iframe>
+<h6>Genre: <%= @movie.genre %> Duration: <%= @movie.duration %></h6>
+<p><%= @movie.description %></p>
