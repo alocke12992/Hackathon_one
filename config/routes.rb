@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'playlists/index'
+
+  get 'playlists/show'
+
+  get 'playlists/new'
+
+  get 'playlists/edit'
+
   devise_for :users
   root 'movies#index'
 
