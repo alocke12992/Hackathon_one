@@ -3,6 +3,7 @@
     <a href="/" class="brand-logo">uToob</a>
     <ul class="right hide-on-med-and-down">
       <li><%= button_to 'Exit', destroy_user_session_path, method: :delete%></li>
+      <li><%= link_to 'Exit', destroy_user_session_path %></li>
     </ul>
   </div>
 </nav>
