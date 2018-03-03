@@ -13,5 +13,6 @@
 
 //= require rails-ujs
 //= require jquery
-//= require semantic-ui
+//= require materialize-sass
 //= require_tree .
+
