@@ -1,19 +1,15 @@
 Rails.application.routes.draw do
 
-  get 'playlists/index'
-
-  get 'playlists/show'
-
-  get 'playlists/new'
-
-  get 'playlists/edit'
+  
 
   devise_for :users
   root 'movies#index'
 
   resources :movies
   # resources :comments
-  resources :accounts
+  resources :accounts do 
+    resources :playlists 
+  end 
 
   resources :accounts do
     member do
