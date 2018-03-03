@@ -1,17 +1,9 @@
-<script type="text/javascript">
-$(".dropdown-button").dropdown();
-</script>
-
-<ul id="dropdown1" class="dropdown-content">
-  <li><%=  button_to 'New', new_movie_path, method: :create %>
-  <li><%= button_to 'Exit', destroy_user_session_path, method: :delete%></li>
-</ul>
 <nav>
   <div class="nav-wrapper red accent-4">
-    <a href="#!" class="brand-logo">uToob</a>
+    <a href="/" class="brand-logo">uToob</a>
     <ul class="right hide-on-med-and-down">
-      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><%=  link_to 'New', new_movie_path, method: :create %>
+      <li><%= link_to'Exit', destroy_user_session_path, method: :delete%></li>
     </ul>
   </div>
 </nav>

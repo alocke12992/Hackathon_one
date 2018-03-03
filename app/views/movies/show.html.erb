@@ -1,8 +1,6 @@
-
 <h1><%= @movie.title %></h1>
-<iframe width="560" height="315" src=< %=\ " @movie.trailer(params[:id]) \"%>
-  frameborder="0" allowfullscreen>
-</iframe>
+<iframe src= "<%= @movie.trailer(params[:id]) %> "height=1024 width=768></iframe>
+
 <h6>Genre: <%= @movie.genre %> Duration: <%= @movie.duration %></h6>
 <p><%= @movie.description %></p>
 <%= link_to 'Add Comment', new_movie_comment_path(@movie) %>
